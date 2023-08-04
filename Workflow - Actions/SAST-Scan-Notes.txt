@@ -1,0 +1,8 @@
+Debug:
+
+pwd
+find ./ -type f -executable | grep bearer
+
+Ref:
+
+https://cloud-native.devsecopsgirl.in/github-action/
