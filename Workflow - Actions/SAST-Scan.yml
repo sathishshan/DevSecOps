@@ -1,4 +1,4 @@
-name: "sast-scan"
+ame: "sast-scan"
 
 on:
   push:
@@ -15,9 +15,11 @@ jobs:
     - name: Installation
       run: |
        curl -sfL https://raw.githubusercontent.com/Bearer/bearer/main/contrib/install.sh | sh
+       
     - name: Bearer Scan
       run: |
        ./bin/bearer scan -f html --output ./shop.html .
+       
     - name: Report Upload
       uses: actions/upload-artifact@v2
       with:
